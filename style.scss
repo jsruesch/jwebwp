@@ -1,196 +1,117 @@
-/*   
+/*
 Theme Name: Jweb WP Blank Theme
 Theme URI: n/a
-Description: Theme GLS11
+Description: Blank Theme
 Author: Jake Ruesch
 Author URI: http://www.jsruesch.com
-Template: jweb_wp
+Template: jwebwp
 Version: 1
 */
 
 
-/*------------------------------------------------------------------
-
-STYLESHEET CONTENTS
-
-    -- GLOBAL STYLES
-    -- MISC CLASSES
-    -- ACTIVE PAGE
-    -- CONTAINERS
-    -- NAVIGATION
-    -- ELEMENTS
-    -- FOOTER
-    
--------------------------------------------------------------------*/
-
-
-/*------------------------------------------------------------------
-
-    Global Styles
-
--------------------------------------------------------------------*/
+/**
+ * =========================================
+ * Imports
+ * =========================================
+ */
 
 @import 'mixins';
 @import 'responsive_styles';
-@import 'mobile_nav_style';
 
-* {
-    margin:0; padding:0;
+/* END: Imports */
 
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-    }
+/**
+ * =========================================
+ * Global Styles
+ * =========================================
+ */
 
-html{ overflow:scroll;}
+ * {
+     margin:0; padding:0;
 
-body{  }
+     -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+             box-sizing: border-box;
+ }
 
-a{    
-     &:hover{
-    }
+ html{
+   overflow: scroll;
+   min-height: 100%;
+   position: relative;
+   width: 100%;
+ }
 
-}
+ body{  }
 
+ a{  }
 
-p{  }
+ p{  }
 
-ul{ list-style:none; }
+ ul{ list-style:none; }
 
-hr{  }
+ hr{  }
 
-h1{  }
-h2{  }
-h3{  }
-h4{  }
-h5{  }
+ h1, h2, h3, h4, h5, h6{
 
-::selection{  }
+ }
 
-/* End Global Styles */
+ table tr{  }
 
+ ::selection{  }
 
-/*------------------------------------------------------------------
+ /* END: Global Styles */
 
-    Misc Classes
 
--------------------------------------------------------------------*/
+ /**
+  * =========================================
+  * Utility Classes
+  * =========================================
+  */
 
-.clear{ clear: both; }
+ .clear{ clear: both; }
+ .left{  float: left; }
+ .right{ float: right; }
+ /* Five Columns Setup */
+ .col-xs-15,
+ .col-sm-15,
+ .col-md-15,
+ .col-lg-15 {
+     position: relative;
+     min-height: 1px;
+     padding-right: 10px;
+     padding-left: 10px;
+ }
+ .col-xs-15{
+   width: 20%;
+   float: left;
+ }
 
-.left{ float:left; }
-.right{ float:right; }
+ /* END: Utility Classes */
 
-.bold{ font-weight:800;}
-.italic{ font-style: italic; }
-.underline{ text-decoration:underline; }
+ /**
+  * =========================================
+  * Navigation
+  * =========================================
+  */
 
-.center_text{ text-align:center; }
-.all_caps{ text-transform:uppercase; }
-.lower_case{ text-transform:lowercase; }
 
-/* End Misc Classes */
+/* END: Navigation */
 
 
+ /**
+  * =========================================
+  * Elements
+  * =========================================
+  */
 
-/*------------------------------------------------------------------
+/* END: Elements */
 
-    Active Page
 
--------------------------------------------------------------------*/
+/**
+ * =========================================
+ * Footer
+ * =========================================
+ */
 
-    /*
-      body#ID_NAME_HERE .Navigation_Name li.List_Item_Class_Here{ Style for active Nav button }
-    */
 
-/* End Active Page */
-
-
-
-/*------------------------------------------------------------------
-
-    Containers
-
--------------------------------------------------------------------*/
-
-.one_fourth{ width:25%; }
-.one_third{ width:33.3%; }
-.half{ width:50%;}
-.two_thirds{ width:66.66%; }
-.full{ @include full; }
-
-.module{ padding:10px; }
-    .container{ background:white; padding:20px;}
-    
-.center{ @include center; }
-
-.wrap{ width:980px; @include center; }
-
-/* End Containers */
-
-
-
-/*------------------------------------------------------------------
-
-    Navigation
-
--------------------------------------------------------------------*/
-
-.navigation_container{
-
-    .navigation{
-
-        .nav{
-
-            a{
-
-               &:hover{
-
-               }
-                
-                li{
-
-                }
-            }
-        }
-    }
-}
-
-
-/* End Navigation */
-
-
-
-/*------------------------------------------------------------------
-
-    Elements
-
--------------------------------------------------------------------*/
-
-
-/* End Elements */
-
-
-
-/*------------------------------------------------------------------
-
-    Footer
-
--------------------------------------------------------------------*/
-.footer{
-
-}
-
-/* End Footer */
-
-
-
-
-
-
-
-
-
-
-
-
+/* END: Footer */
